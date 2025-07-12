@@ -19,7 +19,7 @@ Welcome to my **personal developer portfolio** — a whimsical, interactive, and
 
 ## 📸 Live Demo
 
-🔗 [View Live Website](https://your-portfolio-link.netlify.app)
+🔗 [View Live Website](https://whimsical-ruchi-portfolio.netlify.app/)
 
 > Mobile-friendly and optimized for both light and dark environments.
 
