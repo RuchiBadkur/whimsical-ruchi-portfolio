@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import whimsicalImage from './assets/whimsical-ruchi.png';
+import Firefly from './components/FireFly';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
       {/* ✨ Firefly animation */}
       <FireflyTrail />
+      {/* <Firefly/> */}
 
       {/* ✅ Main Content */}
       <div className="relative z-10 flex flex-col min-h-screen">

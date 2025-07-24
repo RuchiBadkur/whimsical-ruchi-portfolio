@@ -4,13 +4,13 @@ const FireflyTrail = () => {
   const trailRef = useRef([]);
 
   useEffect(() => {
-    const trailLength = 8; // less trail = smoother
+    const trailLength = 10//less trail = smoother
     const trail = Array.from({ length: trailLength }, () => document.createElement('div'));
 
     trail.forEach(dot => {
       dot.className = 'w-3 h-3 rounded-full bg-yellow-300/50 blur-sm absolute pointer-events-none';
-      dot.style.position = 'fixed';
-      dot.style.zIndex = 1;
+      dot.style.position = 'fixed';   
+      dot.style.zIndex = 99
       document.body.appendChild(dot);
     });
 

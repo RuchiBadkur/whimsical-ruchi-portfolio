@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { FaArrowDown, FaFileDownload, FaEnvelopeOpenText } from 'react-icons/fa';
+import {
+  FaArrowDown,
+  FaFileDownload,
+  FaEnvelopeOpenText,
+  FaGithub,
+  FaLinkedin,
+} from 'react-icons/fa';
 import profilePic from '../assets/ruchi-profile-black-bg.png';
 // import profilePic from "../assets/stary-profile.png"
 import { motion } from 'framer-motion';
@@ -80,24 +86,50 @@ const Home = () => {
             </p>
 
             <p className="text-lg sm:text-xl max-w-2xl text-white/80 leading-relaxed">
-              🚀 I’m a curious and detail-oriented Frontend Developer blending creativity with functionality to build scalable and delightful user experiences using <span className="text-pink-300 font-medium">React</span> & <span className="text-pink-300 font-medium">Tailwind CSS</span>.
+              🚀 I’m a curious and detail-oriented Frontend Developer blending
+              creativity with functionality to build scalable and delightful
+              user experiences using{' '}
+              <span className="text-pink-300 font-medium">React</span> &{' '}
+              <span className="text-pink-300 font-medium">Tailwind CSS</span>.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-10 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-10 justify-center lg:justify-start items-center">
+              {/* Download CV */}
               <a
-                href="/cv.pdf"
-                download
-                className="flex items-center gap-2 bg-pink-300 text-black px-6 py-3 rounded-md shadow hover:bg-pink-200 transition font-semibold"
+                href="/Ruchi Web Developer.pdf"
+                download="Ruchi_Badkur_Portfolio"
+                className="flex items-center gap-2 bg-pink-300 text-black px-5 py-3 rounded-md shadow hover:bg-pink-200 transition font-semibold min-w-[200px] justify-center"
               >
                 <FaFileDownload /> Download CV
               </a>
 
+              {/* Contact */}
               <a
                 href="#contact"
-                className="flex items-center gap-2 bg-white/10 border border-white/20 text-white px-6 py-3 rounded-md shadow hover:bg-white/20 transition font-semibold"
+                className="flex items-center gap-2 bg-white/10 border border-white/20 text-white px-5 py-3 rounded-md shadow hover:bg-white/20 transition font-semibold min-w-[200px] justify-center"
               >
                 <FaEnvelopeOpenText /> Connect with Me
               </a>
+
+              {/* Social Icons Row */}
+              <div className="flex gap-6 mt-2 sm:mt-0">
+                <a
+                  href="https://github.com/RuchiBadkur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-pink-200 transition-colors"
+                >
+                  <FaGithub size={32} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ruchi-badkur/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-pink-200 transition-colors"
+                >
+                  <FaLinkedin size={32} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -122,4 +154,3 @@ const Home = () => {
 };
 
 export default Home;
-

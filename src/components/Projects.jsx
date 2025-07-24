@@ -4,23 +4,23 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'YouTube Clone',
-    description: 'A real-time video browsing app using YouTube API with search, filters, and responsive UI.',
-    image: '/images/youtube-clone.jpg',
-    github: 'https://github.com/yourusername/youtube-clone',
-    demo: 'https://youryoutubeclone.netlify.app',
+    title: 'GoDeviL',
+    description: 'A striking Gen Z fashion brand page split between heaven and hell, brought to life with React and Framer Motion.',
+    image: '/projects-preview/GoDevil-preview.png',
+    github: 'https://github.com/RuchiBadkur/GoDevil',
+    demo: 'https://godevil.netlify.app/',
   },
   {
-    title: 'Recipe Finder',
-    description: 'React-based recipe search app with dynamic API integration and filtering features.',
-    image: '/images/recipe-finder.jpg',
-    github: 'https://github.com/yourusername/recipe-finder',
-    demo: 'https://yourrecipefinder.netlify.app',
+    title: 'Whimsical Portfolio',
+    description: 'A responsive React portfolio featuring glassmorphism design, Firefly trail, smooth Framer Motion animations, and a starry cosmic theme.',
+    image: '/projects-preview/whimsical-preview.png',
+    github: 'https://github.com/RuchiBadkur/whimsical-ruchi-portfolio',
+    demo: 'https://whimsical-ruchi-portfolio.netlify.app/',
   },
   {
-    title: 'Chat App',
-    description: 'A real-time chat application using MERN stack and socket.io.',
-    image: '/images/chat-app.jpg',
+    title: 'DevPrompt Lab',
+    description: 'A mini prompt-sharing platform for developers to discover, submit, and upvote powerful AI prompts.',
+    image: '/projects-preview/DevPrompt-preview.png',
     github: 'https://github.com/yourusername/chat-app',
     demo: 'https://yourchatapp.netlify.app',
   },
@@ -85,6 +85,19 @@ const Projects = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* 👇 Subtle "See More" Button */}
+        <div className="flex justify-center mt-16">
+          <motion.a
+            href="https://github.com/RuchiBadkur"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            className="px-6 py-3 border border-white/20 hover:border-pink-300 bg-white/5 hover:bg-pink-300/20 rounded-full text-white font-medium backdrop-blur-xl transition-all"
+          >
+            Hire me to create yours! View more projects →
+          </motion.a>
         </div>
       </motion.div>
     </section>
